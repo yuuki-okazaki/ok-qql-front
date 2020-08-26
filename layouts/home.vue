@@ -1,10 +1,9 @@
 <template>
   <v-app>
     <my-header />
-    このページはログイン前のレイアウト「home.vue」が使用されています。
-    <nuxt-link to="/login">
-      ログインする
-    </nuxt-link>
+    <v-content>
+      <!-- ここに自由に追記 -->
+    </v-content>
     <my-footer />
   </v-app>
 </template>
@@ -18,5 +17,8 @@ export default {
     myHeader,
     myFooter,
   },
+  data: () => ({
+    appName: process.env.APP_NAME,
+  }),
 }
 </script>
