@@ -2,6 +2,9 @@
   <v-app>
     <my-header />
     このページはログイン前のレイアウト「home.vue」が使用されています。
+    <nuxt-link to="/login">
+      ログインする
+    </nuxt-link>
     <my-footer />
   </v-app>
 </template>
